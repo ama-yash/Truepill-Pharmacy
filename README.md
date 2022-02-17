@@ -3,13 +3,44 @@
 
 Truepill Pharmacy is a menu-driven Javascript application that is built for inventory management of a pharmacy. The application is completely controlled by console using NodeJS. It means the user do not need to execute the script on browser. The application is built keeping in mind the simplicity and user-friendliness while utilization. The application do not use any non-volatile storage system for inventory management. Instead, it uses Javascript Dictionary data structure for various operations.
 
-![Main-Menu](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/main-menu.png)
-## Features
+## Features Explained
 
 ### 1. Menu-Driven
 
 As mentioned earlier, Truepill Pharmacy is a menu-driven application. It means the user can route to access the features simply by choosing appropriate options. It could get further clear by following picture.
 
-### 2. Add Medications
+![Main-Menu](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/main-menu.png)
 
-Truepill Pharmacy considers the name of a medication as unique identifier. The user can simply add a medication using its name. Note that this feature is case-insensitive for example, 'Paracetamol' = 'paracetamol' = 'PARACETAMOL' and so on likewise. This feature will reject any attempt to duplicate an entry as can be seen in the picture below.
+There are total 5 main features which are explained further.
+### 2. Add Medication
+
+Truepill Pharmacy considers the name of a medication as unique identifier. The user can simply add a medication using its name. Note that this feature is case-insensitive for example, 'Paracetamol' = 'paracetamol' = 'PARACETAMOL' and so on likewise. The feature also takes care of string validations like null entries or entry containing only numbers and throws error messages. This feature will reject any attempt to duplicate an entry as can be seen in the picture below.
+
+![Add-Medication-Duplicate](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/add-medication_duplicates.png)
+
+### 3. Show Medications
+
+This feature will list the name of medications that are added by the user for inventory management. The picture below provides a glance of this feature. The user can route to main menu simply by pressing Enter button.
+
+![list-medication](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/list-medication.png)
+
+### 4. Update Inventory
+
+Truepill Pharmacy allows to store three attributes of a medicine: Strength (in mg), Pack Size, and Total Packs available. After selecting this option from the menu, the user is asked the name of a medicine that needs to be updated. The feature will throw an error if the provided medicine is not already in the list. The picture below explains the operation.
+
+![update-inventory](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/update-inventory.png)
+
+The user can choose to update any attributes by selecting appropriate options. The third option, Add Packs will add the input to the value stored in the attribute. The feature has placed various validation constraint on the values for example, entry must not be null and must be a number.
+
+### 5. Show Inventory
+
+This feature will provide a structured view of inventory like a relational table that includes medicine name, strength, pack size, and total packs available.
+
+![show-inventory](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/show-inventory.png)
+
+### 6. Make Sale
+
+The features, as  the name suggests generate sale of medications based on the packs available in the inventory. Its operation is explained below.
+
+![sale-1](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/sale-1.png) ![sale-2](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/sale-2.png)
+
