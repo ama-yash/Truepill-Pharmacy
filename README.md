@@ -1,7 +1,25 @@
 # Truepill Pharmacy
+
 ## Introduction
 
-Truepill Pharmacy is a menu-driven Javascript application that is built for inventory management of a pharmacy. The application is completely controlled by console using NodeJS. It means the user do not need to execute the script on browser. The application is built keeping in mind the simplicity and user-friendliness while utilization. The application do not use any non-volatile storage system for inventory management. Instead, it uses Javascript Dictionary data structure for various operations.
+Truepill Pharmacy is a light weight menu-driven Javascript application that is built for inventory management of a pharmacy. The application is completely controlled by console using NodeJS. It means the user do not need to execute the script on browser. The application is built keeping in mind the simplicity and user-friendliness while utilization. The application do not use any non-volatile storage system for inventory management. Instead, it uses Javascript Dictionary data structure for various operations.
+
+## Installation
+1. Install NodeJS
+
+- To download and install NodeJS, please refer to the official link: https://nodejs.org/en/download
+
+2. Clone Repo
+```
+    git clone https://github.com/ama-yash/Truepill-Pharmacy.git
+    cd Truepill-Pharmacy
+```
+
+3. Start the application
+
+```
+    node main.js
+```
 
 ## Features Explained
 
@@ -44,3 +62,8 @@ The features, as  the name suggests generate sale of medications based on the pa
 
 ![sale-1](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/sale-1.png) ![sale-2](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/sale-2.png)
 
+The feature first requires a medicine name that is already in the medication list, failure to which, application will throw an error message. Next, it provide details (strength, pack size, and total packs) of the medicine and ask for the number of units to be sold. If the input exceeds the total packs available, an error message will be thrown and require to enter the input again or enter 0 to cancel the operation.
+
+## Contact
+
+For any queries related to this application, please feel free to send an email on yash.soni5999@gmail.com
