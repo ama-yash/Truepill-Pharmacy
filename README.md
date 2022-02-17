@@ -3,6 +3,7 @@
 
 Truepill Pharmacy is a menu-driven Javascript application that is built for inventory management of a pharmacy. The application is completely controlled by console using NodeJS. It means the user do not need to execute the script on browser. The application is built keeping in mind the simplicity and user-friendliness while utilization. The application do not use any non-volatile storage system for inventory management. Instead, it uses Javascript Dictionary data structure for various operations.
 
+![Main-Menu](https://github.com/ama-yash/Truepill-Pharmacy/blob/main/screenshots/main-menu.png)
 ## Features
 
 ### 1. Menu-Driven
