@@ -1,5 +1,3 @@
-const { Console } = require('console');
-const { read } = require('fs');
 var Inventory = {};
 main();
 function main(){
