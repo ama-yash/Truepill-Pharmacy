@@ -1,6 +1,39 @@
 const { Console } = require('console');
 const { read } = require('fs');
 var Inventory = {};
+main();
+function main(){
+    console.log('\n---------------------TRUEPILL PHARMACY---------------------');
+    console.log('\n1. Add Medication\n2. Show Medications\n3. Update Inventory\n4. Show Inventory\n5. Exit\n')
+    const readline = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+    readline.question('Please enter your choice: ',input => {
+        input = parseInt(input);
+        readline.close();
+        switch(input){
+            case 1:
+                addMedication();
+                break;
+            case 2:
+                showMedication();
+                break;
+            case 3:
+                updateInventory();
+                break;
+            case 4:
+                displayInventory();
+                break;
+            case 5:
+                break;
+            default:
+                console.log('Invalid Input. Please Try Again.');
+                main();
+                break;
+        }
+    });
+}
 function addMedication(){
     const readline = require('readline').createInterface({
         input: process.stdin,
@@ -171,36 +204,3 @@ function displayInventory(){
         main();
     });
 }
-function main(){
-    console.log('\n---------------------TRUEPILL PHARMACY---------------------');
-    console.log('\n1. Add Medication\n2. Show Medications\n3. Update Inventory\n4. Show Inventory\n5. Exit\n')
-    const readline = require('readline').createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
-    readline.question('Please enter your choice: ',input => {
-        input = parseInt(input);
-        readline.close();
-        switch(input){
-            case 1:
-                addMedication();
-                break;
-            case 2:
-                showMedication();
-                break;
-            case 3:
-                updateInventory();
-                break;
-            case 4:
-                displayInventory();
-                break;
-            case 5:
-                break;
-            default:
-                console.log('Invalid Input. Please Try Again.');
-                main();
-                break;
-        }
-    });
-}
-main();
