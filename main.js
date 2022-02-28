@@ -1,4 +1,5 @@
 var Inventory = {};
+console.clear();
 main();
 function main(){
     console.log('\n---------------------TRUEPILL PHARMACY---------------------');
